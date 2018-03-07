@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>BrewBuddy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/slidermodernizr.custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+</head>
+ <body>
+ 	<div id="root"></div>
+ </body>
+ <script type="text/babel">
+ 	var About = React.createClass({
+  render: function() {
+    return (
+      <div>
+        {/* Background slider  */}
+        <div className="slider">
+          <ul id="cbp-bislideshow" className="cbp-bislideshow">
+            <li><img src="images/1.jpg" alt="image01" /></li>
+            <li><img src="images/2.jpg" alt="image02" /></li>
+            <li><img src="images/3.jpg" alt="image03" /></li>
+            <li><img src="images/4.jpg" alt="image04" /></li>
+            <li><img src="images/5.jpg" alt="image05" /></li>
+            <li><img src="images/6.jpg" alt="image06" /></li>
+          </ul>    
+        </div>
+        {/* End Background slider */}
+        <div className="header_top">
+          <div className="wrap">	 			
+            <div className="logo1">
+              <a href="index.html"><img src="images/beerbuddy1.gif" alt /></a>
+            </div>	
+            <div className="social-icons">						
+              <ul>
+                <li><a className="facebook" href="https://www.facebook.com/brewbuddyapp/" target="_blank"> </a></li>
+                <li><a className="twitter" href="#" target="_blank" /></li>
+              </ul>
+            </div>
+            <div className="clear" />
+          </div>	 
+          <div className="clear" />		   
+        </div>
+        <div className="wrap">
+          <div className="main">	        	
+            <div className="section group">
+              <div className="col_1_of_3 span_1_of_3">
+                <h2><span>Welcome</span></h2>
+                <h2>To BrewBuddy</h2>
+                <p>Brew Buddy is an interactive site crafted for the beer enthusiast or average Joe looking for beer information or just simply a place to enjoy a good brew.
+                </p>
+              </div>
+              <div className="col_1_of_3 span_1_of_3">
+                <div className="menu_timmings">
+                  <ul>
+                    <li>
+                      <div className="txt1"><a href="about.html">About</a></div><a href="about.html">
+                      </a></li><a href="about.html">
+                    </a><li><a href="about.html">
+                      </a><div className="txt1"><a class="test" href="about.html" /><a href="blog.html">Virtual Taproom</a></div><a href="blog.html">
+                      </a></li><a href="blog.html">
+                    </a><li><a href="blog.html">
+                      </a><div className="txt1"><a href="blog.html" /><a href="contact.html">Contact</a></div>
+                    </li>
+                    <li>
+                      <div className="txt1"><a href="find.html">Brew Locator</a></div><a href="find.html">
+                      </a></li><a href="find.html">
+                    </a></ul><a href="find.html">
+                  </a></div><a href="find.html">
+                </a></div><a href="find.html">
+                <div className="col_1_of_3 span_1_of_3">
+                  <h2><span>Brew Buddies</span></h2>
+                  <div className="event-grid">
+                    <div className="event_img">
+                      <img src="images/paul.png" title="post1" alt />
+                    </div>
+                    <div className="event_desc">
+                      <h4><span>Paul Thorman</span></h4>
+                      <h4>Brew Buddy</h4>
+                      <p>Favorite Beer: Ballast Point Grapefuit Sculpin</p>
+                    </div>
+                    <div className="clear"> </div>
+                  </div>
+                  <div className="event-grid">
+                    <div className="event_img">
+                      <img src="images/ryan.png" title="post1" alt />
+                    </div>
+                    <div className="event_desc">
+                      <h4><span>Ryan Howard</span></h4>
+                      <h4>Brew Buddy</h4>
+                      <p>Favorite Beer: GrapeFruit Sculpin</p>
+                    </div>
+                    <div className="clear"> </div>
+                  </div>
+                  <div className="event-grid">
+                    <div className="event_img">
+                      <img src="images/jesus.png" title="post1" alt />
+                    </div>
+                    <div className="event_desc">
+                      <h4><span>Jesus Morquecho</span></h4>
+                      <h4>Brew Buddy</h4>
+                      <p>Favorite Beer: Green Flash Passion Fruit Kicker</p>
+                    </div>
+                    <div className="clear"> </div>
+                    <div className="event-grid">
+                      <div className="event_img">
+                        <img src="images/event3.jpg" title="post1" alt />
+                      </div>
+                      <div className="event_desc">
+                        <h4><span>Parker Barrett</span></h4>
+                        <h4>Brew Buddy</h4>
+                        <p>Favorite Beer: Julius IPA </p>
+                      </div>
+                      <div className="clear"> </div>
+                    </div>
+                  </div>
+                </div>
+              </a></div><a href="find.html">        
+            </a></div><a href="find.html">
+            <div className="copy_right">
+              <div className="wrap">
+                <p> © Copyright 2018 Paul Thorman, Jesus Morquecho, Ryan Howard, Parker Barrett
+                </p></div>
+            </div>
+          </a></div></div>
+    );
+  }
+});
+ReactDOM.render(
+    <About />,
+    document.getElementById('root')
+);
+ </script>
+ </html>
+

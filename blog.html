@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>BrewBuddy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+</head>
+ <body>
+	    <div id="root"></div>
+      </body>
+      <script type="text/babel">
+      var Blog = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <div className="header_top">
+          <div className="wrap">	 			
+            <div className="logo1">
+              <a href="index.html"><img src="images/beerbuddy1.gif" alt /></a>
+            </div>	
+            <div className="nav">			
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Virtual Taproom</a></li>
+                <li><a href="find.html">Brew Locator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div className="clear" />
+              </ul>	
+            </div>	 
+            <div className="clear" />		   
+          </div>
+        </div>
+        <div className="wrap">
+          <div className="main">	        	
+            <div className="blog">
+              <h2>Blogs</h2>
+              <div className="blog-leftgrids">
+                <div className="image group">
+                  <div className="grid images_3_of_1">
+                    <a href="#"><img src="images/blog-img2.jpg" alt /></a>
+                  </div>
+                  <div className="grid blog-desc">
+                    <h4><span>Duis aute irure dolor cillum dolore</span></h4>
+                    <h4>Sep 14TH, 2013,&nbsp;&nbsp; posted By <a href="#" className="post">Lorem ipsum</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    <a href="#" className="button">Read More</a>
+                  </div>
+                </div>		  						 
+              </div>
+              <div className="blog-leftgrids">
+                <div className="image group">
+                  <div className="grid images_3_of_1">
+                    <a href="#"><img src="images/blog-img1.jpg" alt /></a>
+                  </div>
+                  <div className="grid blog-desc">
+                    <h4><span>Excepteur sint non proident</span></h4>
+                    <h4>Sep 14TH, 2013,&nbsp;&nbsp; posted By <a href="#" className="post">Lorem ipsum</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    <a href="#" className="button">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div className="blog-leftgrids">
+                <div className="image group">
+                  <div className="grid images_3_of_1">
+                    <a href="#"><img src="images/event-img1.jpg" alt /></a>
+                  </div>
+                  <div className="grid blog-desc">
+                    <h4><span>Duis aute irure dolor cillum dolore</span></h4>
+                    <h4>Sep 14TH, 2013,&nbsp;&nbsp; posted By <a href="#" className="post">Lorem ipsum</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    <a href="#" className="button">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div className="content-pagenation">
+                <li><a href="#">Frist</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><span>....</span></li>
+                <li><a href="#">Last</a></li>
+                <div className="clear"> </div>
+              </div>	    	 			 	   
+            </div>
+          </div>        
+        </div>
+        <div className="copy_right">
+          <div className="wrap">
+            <p> © Copyright 2018 Paul Thorman, Jesus Morquecho, Ryan Howard, Parker Barrett</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
+ReactDOM.render(
+    <Blog />,
+    document.getElementById('root')
+);
+</script>
+ </html>
+

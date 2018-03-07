@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+</head>
+ <body>
+	    <div id="root"></div>
+      </body>
+      <script type="text/babel">
+      	var Contact = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <div className="header_top">
+          <div className="wrap">	 			
+            <div className="logo1">
+              <a href="index.html"><img src="images/beerbuddy1.gif" alt /></a>
+            </div>	
+          </div>	 
+          <div className="clear" />		   
+        </div>
+        <div className="wrap">
+          <div className="main">	
+            <div className="contact">        	
+              <div className="section group">
+                <div className="col_1_of_3 contact_1_of_3">
+                  <div className="contact-form">
+                    <h3>Comments: </h3>
+                    <form>
+                      <div>
+                        <span><input type="text" className="textbox" defaultValue="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" /></span>
+                      </div>
+                      <div>
+                        <span><input type="text" className="textbox" defaultValue="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" /></span>
+                      </div>
+                      <div>
+                        <span><textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" defaultValue={"Tell us how Awesome we are..."} /></span>
+                      </div>
+                      <div>
+                        <span><input type="submit" defaultValue="Submit" /></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div className="col_1_of_3 span_1_of_3">
+                  <div className="menu_timmings">
+                    <ul>
+                      <li>
+                        <div className="txt1"><a href="about.html">About</a></div><a href="about.html">
+                        </a></li><a href="about.html">
+                      </a><li><a href="about.html">
+                        </a><div className="txt1"><a href="about.html" /><a href="blog.html">Virtual Taproom</a></div><a href="blog.html">
+                        </a></li><a href="blog.html">
+                      </a><li><a href="blog.html">
+                        </a><div className="txt1"><a href="blog.html" /><a href="contact.html">Contact</a></div><a href="contact.html">
+                        </a></li><a href="contact.html">
+                      </a><li><a href="contact.html">
+                        </a><div className="txt1"><a href="contact.html" /><a href="find.html">Brew Locator</a></div><a href="find.html">
+                        </a></li><a href="find.html">
+                      </a></ul><a href="find.html">
+                    </a></div><a href="find.html">
+                  </a></div><a href="find.html"> 
+                  <div className="col_1_of_3 contact_1_of_3">
+                    <div className="contact_info">
+                      <h3>Find a Brew</h3>
+                      <div className="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429157.55423601315!2d-117.38986099147895!3d32.82423888001758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan+Diego%2C+CA!5e0!3m2!1sen!2sus!4v1519182486470" width={335} height={260} frameBorder={0} style={{border: 0}} allowFullScreen />
+                      </div>
+                    </div>
+                  </div>
+                </a></div><a href="find.html">
+              </a></div><a href="find.html"> 
+            </a></div><a href="find.html">       
+          </a></div><a href="find.html">
+          <div className="copy_right">
+            <div className="wrap">
+              <p> </p><p> © Copyright 2018 Paul Thorman, Jesus Morquecho, Ryan Howard, Parker Barrett</p>
+            </div>
+          </div>
+        </a></div>
+    );
+  }
+});
+ReactDOM.render(
+    <Contact />,
+    document.getElementById('root')
+);
+      </script>
+ </html>
+
