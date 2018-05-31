@@ -5,10 +5,10 @@ var map;
 
 //Display Brewery Info
 function displayBreweryInfo() {
-	var zipcode = $("#zipcode-input").val().trim();
+	var locality = $("#locality-input").val().trim();
 	// var queryURL = "http://api.brewerydb.com/v2/locations?postalCode=" + zipcode + "&key=0e8760e7ad6c26f9098f623ca7d0b5a7";
 	// var apiKey = "272f3002d2ba42214bb93754e572957f692647d0";
-	var brewURL = "http://api.brewerydb.com/v2/locations?key=8ebe8cb050c4850b0c188999ca2f0d35&withSocialAccounts=Y&postalCode="+ zipcode;
+	var brewURL = "http://api.brewerydb.com/v2/locations?key=8ebe8cb050c4850b0c188999ca2f0d35&withSocialAccounts=Y&locality="+ locality;
 	var proxy = 'http://www.chrisstead.com/proxy/?apikey=' + "08e200551e5b26e89410cfcdec2305a85bce6219" + '&requesturl=' + brewURL;
 			
 
