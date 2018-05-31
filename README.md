@@ -1,6 +1,6 @@
 # Brew Buddy Final Group Project
 
-Link to Deployed Site: https://brewsbuddy.herokuapp.com/
+Link to Deployed Site: http://brewsbuddy.herokuapp.com/
 
 Instructions: Click Log in and and leave blank and it redirects to the home page. 
 

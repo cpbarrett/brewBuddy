@@ -37,7 +37,8 @@ function breweryInfo(brewery, i) {
 	var breweryDiv = $("<div class='brewery'>");
 	var pOne = $("<p>").html("<h3><span class=\"brewery-num\">" + (i+1) + "</span> " + brewery.brewery.name + "</h3>");breweryDiv.append(pOne);
 	var pTwo = $("<p>").html(brewery.streetAddress + "<br>" + brewery.locality + ", " + brewery.region + " " + brewery.postalCode + "<br>" + brewery.phone);breweryDiv.append(pTwo);
-	var pThree = $('<p>').html("<a class=\"btn\" id=\"website-btn\" href=" + brewery.website + " target=\"_blank\">website" + "</a><br>" + "<hr>");breweryDiv.append(pThree);
+	var pThree = $("<p>").html("Hours:" + " " + brewery.hoursOfOperation + "<br>");breweryDiv.append(pThree);
+	var pFour = $('<p>').html("<a class=\"btn\" id=\"website-btn\" href=" + brewery.website + " target=\"_blank\">website" + "</a><br>" + "<hr>");breweryDiv.append(pFour);
 	$('#form-content').append(breweryDiv);
 }
 
